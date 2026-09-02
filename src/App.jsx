@@ -6,6 +6,7 @@ import CardModulo from './components/CardModulo'
 import Clientes from './pages/Clientes'
 import ListaClientes from './pages/ListaClientes'
 import CadastroCliente from './pages/CadastroCliente'
+import Funcionarios from './pages/Funcionarios'
 
 function App() {
   const [mostrarModulos, setMostrarModulos] =
@@ -25,6 +26,7 @@ function App() {
   id: 3,
   titulo: 'Gerenciamento de Funcionários',
   descricao: 'Cadastre e consulte os funcionários da empresa.',
+  rota: '/funcionarios',
   },
   {
   id: 4,
@@ -67,6 +69,7 @@ function App() {
    <Route path="/clientes" element={<Clientes />} />
    <Route path="/clientes/listar" element={<ListaClientes />} />
    <Route path="/clientes/cadastrar" element={<CadastroCliente />} />
+   <Route path="/funcionarios" element={<Funcionarios />} />
  </Routes>
  )
 }
