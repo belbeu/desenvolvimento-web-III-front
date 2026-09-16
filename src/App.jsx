@@ -113,7 +113,9 @@ function alterarCliente(clienteAtualizado) {
       />
       <Route
   path="/clientes/cadastrar"
-  element={<CadastroCliente aoCadastrar={adicionarCliente} />}
+  element={<CadastroCliente 
+  clientes={clientes}
+  aoCadastrar={adicionarCliente} />}
 />
     
     <Route
