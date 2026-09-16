@@ -154,7 +154,7 @@ function CadastroCliente({ clientes, aoCadastrar }) {
             limparErro('telefone')
           }}
           className={erros.telefone ? 'campo-invalido' : ''}
-          placeholder="(11)91234-5678"
+          placeholder="(11) 91234-5678"
           required
         />
         {erros.telefone && (
